@@ -19,3 +19,4 @@ Seismic Microzonation
 This section includes tools for evaluating ground stability and seismic risk:
 - Lateral Spreading Analysis (LSA): Identifies horizontal soil movement risks during earthquakes by crossing the Liquefaction Index (IL)with terrain slope percentages. It classifies areas into Respect Zones (RZ), Susceptibility Zones (SZ), or Low Susceptibility Zones (Z0).
 - Seismic Zones with Morphological Gradient (SZMG): Identifies areas with slopes > 15° within seismic zones. This is critical because steep morphological gradients can amplify seismic waves and increase the risk of seismic-caused landslides.
+<img width="646" height="624" alt="icon" src="https://github.com/user-attachments/assets/5f03b798-2e2e-46bd-adc1-78684add237b" />
