@@ -9,8 +9,8 @@ email=giuseppe.cosentino@cnr.it
 
 about=geoprocessing tools for geology, seismic microzonation ad hydrology
 
-tracker=http://bugs
-repository=http://repo
+tracker=https://github.com/pinogcosentino/Geology-tools/issues
+repository=https://github.com/pinogcosentino/Geology-tools
 # End of mandatory metadata
 
 # Recommended items:
@@ -22,11 +22,11 @@ hasProcessingProvider=yes
 # Tags are comma separated with spaces allowed
 tags=geology, python, seismic microzonation, hydrology, geoprocessing
 
-homepage=http://homepage
+homepage=https://github.com/pinogcosentino/Geology-tools
 category=Analysis
 icon=icon.png
 # experimental flag
-experimental=False
+experimental=True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
