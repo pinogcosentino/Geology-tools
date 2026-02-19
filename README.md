@@ -1,5 +1,5 @@
 # Geology-tools 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669743.svg)](https://doi.org/10.5281/zenodo.18669743)![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools) ![GitHub Release](https://img.shields.io/github/v/release/pinogcosentino/Geology-tools)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669743.svg)](https://doi.org/10.5281/zenodo.18669743)![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
 
 
 Geology Tools describes a suite of QGIS plugins designed to streamline geological, hydrological, and seismic microzonation analyses.
