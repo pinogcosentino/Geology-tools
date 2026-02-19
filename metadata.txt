@@ -1,0 +1,74 @@
+
+[general]
+name=Geology tools
+qgisMinimumVersion=3.0
+description=Geology Tools offers a collection of plugins that simplify workflows in geology, hydrogeology, and seismic microzonation
+version=1.0
+author=Giuseppe Cosentino (Pino), Francesco Pennica
+email=giuseppe.cosentino@cnr.it
+
+about=The following is a summary of the main modules and their functionalities:
+
+	<i>GEOLOGY MAPPING</i>
+	<b>1. The Geology from points and lines</b>
+		Tool automates the creation of geological maps.
+		- Workflow: The user draws geological contact lines to form closed polygons and places points with geological attributes (formation codes, lithology, etc.) inside them.
+		- Automation: The algorithm cleans duplicate geometries, creates polygons from the line network, and transfers the attributes from the points to the resulting polygons.
+		- Output: Produces topologically clean geological polygons and contact lines ready for GIS analysis.
+
+	<i>HYDROLOGY</i>
+	<b>2. The Hydrological Analysis Stream Network (HASN)</b>
+	 Module utilizes an integrated approach, leveraging GRASS GIS and SAGA GIS algorithms for robust watershed analysis.
+		- Terrain Correction: It uses the Wang & Liu algorithm to fill sinks in Digital Terrain Models (DTM), ensuring a hydrologically correct surface.
+		- Flow & Indices: It calculates drainage directions and flow accumulation to derive the Topographic Wetness Index (TWI), which identifies areas prone to saturation and runoff
+		- Stream Delineation: The tool generates a vector stream network from the DTM, offering both a raw version for analysis and a "smooth" version for better cartographic visualization.
+
+	<i>SEISMIC MICROZONATION</i>
+		This section includes tools for evaluating ground stability and seismic risk:
+	<b>3. Lateral Spreading Analysis (LSA)</b>: 
+		Identifies horizontal soil movement risks during earthquakes by crossing the Liquefaction Index (IL)with terrain slope percentages. It classifies areas into Respect Zones (RZ), Susceptibility Zones (SZ), or Low Susceptibility Zones (Z0).
+	<b>4. Seismic Zones with Morphological Gradient (SZMG)</b>: 
+		Identifies areas with slopes > 15° within seismic zones. This is critical because steep morphological gradients can amplify seismic waves and increase the risk of seismic-caused landslides.
+
+tracker=https://github.com/pinogcosentino/Geology-tools/issues
+repository=https://github.com/pinogcosentino/Geology-tools
+
+
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+
+changelog=
+	Version 1.0 
+		-  resolved bugs
+          -  the shortHelpString panels have been improved
+	Version 0.2 
+		-  resolved bugs experimental version 
+	Version 0.1 
+		-  inizial experimental version 
+
+# Tags are comma separated with spaces allowed
+tags=geology, python, seismic microzonation, hydrology, geoprocessing
+
+homepage=https://github.com/pinogcosentino/Geology-tools
+category=Analysis, Geoprocessing 
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
