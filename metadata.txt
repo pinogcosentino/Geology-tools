@@ -41,9 +41,11 @@ repository=https://github.com/pinogcosentino/Geology-tools
 hasProcessingProvider=yes
 
 changelog=
+Version 1.0.1
+		-  Seismic microzonation/Lateral spreading analysis (LSA) with color-coded categories and labels
 	Version 1.0 
 		-  resolved bugs
-          -  the shortHelpString panels have been improved
+        -  the shortHelpString panels have been improved
 	Version 0.2 
 		-  resolved bugs experimental version 
 	Version 0.1 
