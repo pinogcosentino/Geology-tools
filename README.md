@@ -1,10 +1,10 @@
 # Geology-tools
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669743.svg)](https://doi.org/10.5281/zenodo.18669743)
-![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools) 
+![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 ![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
 [![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
 [![Guida](https://img.shields.io/badge/Guide_plugin-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/geology_tools_badge.svg)
 
