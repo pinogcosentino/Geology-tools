@@ -135,13 +135,9 @@ The HASN module performs comprehensive watershed analysis using an **integrated 
 
 #### Processing Workflow
 
-```
-DTM → Fill Sinks → Flow Direction → Flow Accumulation → TWI
-                                                      ↓
-                                              Stream Delineation
-                                                      ↓
-                                           Raster → Vector → Smooth
-```
+
+![figura](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/Hydrological%20Analysis%20Stream%20Network%20-%20QGIS%20Plugin%20%20.png)
+
 
 **Step 1: Fill Sinks (Wang & Liu Algorithm)**  
 Creates a hydrologically correct DTM by filling artificial depressions. The algorithm identifies all sinks, finds the lowest outlet (spill point) on each depression's boundary, and fills it to that elevation.
