@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 200 200">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16 {
+        fill: none;
+      }
+
+      .st1 {
+        opacity: .4;
+      }
+
+      .st1, .st2, .st3, .st17, .st4, .st5, .st6, .st7, .st8, .st18, .st19, .st10, .st11, .st20, .st12, .st13, .st21, .st14, .st15, .st16, .st22, .st23 {
+        isolation: isolate;
+      }
+
+      .st1, .st2, .st3, .st7, .st9, .st10, .st11, .st14, .st15, .st16 {
+        stroke: #4ecdc4;
+      }
+
+      .st1, .st7, .st13 {
+        stroke-width: 1.5px;
+      }
+
+      .st2, .st3, .st17 {
+        opacity: .8;
+      }
+
+      .st2, .st10, .st14, .st16 {
+        stroke-width: 1.2px;
+      }
+
+      .st3, .st11, .st15 {
+        stroke-width: 1.4px;
+      }
+
+      .st17 {
+        fill: #f0d080;
+      }
+
+      .st4 {
+        opacity: .5;
+      }
+
+      .st4, .st5 {
+        stroke: #e07070;
+      }
+
+      .st5 {
+        stroke-dasharray: 4 2;
+        stroke-width: 1.8px;
+      }
+
+      .st5, .st15, .st16 {
+        opacity: .7;
+      }
+
+      .st6 {
+        opacity: .15;
+        stroke-width: .5px;
+      }
+
+      .st6, .st8, .st12 {
+        stroke: #fff;
+      }
+
+      .st7, .st20 {
+        opacity: .9;
+      }
+
+      .st8 {
+        opacity: .35;
+        stroke-width: .8px;
+      }
+
+      .st18 {
+        opacity: .95;
+      }
+
+      .st18, .st19, .st21 {
+        fill: #4ecdc4;
+      }
+
+      .st19, .st22 {
+        opacity: .25;
+      }
+
+      .st9 {
+        stroke-width: 1.6px;
+      }
+
+      .st10, .st11 {
+        opacity: .75;
+      }
+
+      .st20 {
+        fill: #1e3a2e;
+      }
+
+      .st24 {
+        fill: url(#Sfumatura_senza_nome);
+      }
+
+      .st12 {
+        stroke-width: .7px;
+      }
+
+      .st12, .st23 {
+        opacity: .2;
+      }
+
+      .st13 {
+        opacity: .6;
+        stroke: #f0d080;
+        stroke-dasharray: 3 3;
+      }
+
+      .st21 {
+        font-family: CourierNewPSMT, 'Courier New';
+        font-size: 9px;
+        letter-spacing: .33em;
+      }
+
+      .st21, .st14 {
+        opacity: .85;
+      }
+
+      .st25 {
+        fill: url(#Sfumatura_senza_nome_6);
+      }
+
+      .st26 {
+        fill: url(#Sfumatura_senza_nome_5);
+      }
+
+      .st27 {
+        fill: url(#Sfumatura_senza_nome_3);
+      }
+
+      .st28 {
+        fill: url(#Sfumatura_senza_nome_4);
+      }
+
+      .st29 {
+        fill: url(#Sfumatura_senza_nome_2);
+      }
+
+      .st30 {
+        clip-path: url(#clippath);
+      }
+
+      .st22, .st23 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome" data-name="Sfumatura senza nome" x1="-318.4" y1="397.29" x2="-317.4" y2="396.29" gradientTransform="translate(63680 79458.11) scale(200 -200)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a2a3a"/>
+      <stop offset="1" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="st0" y="0" width="200" height="200" rx="32" ry="32"/>
+    </clipPath>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="-318" y1="391.39" x2="-317" y2="391.39" gradientTransform="translate(50900 12201.25) scale(160 -30.87)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8a96e"/>
+      <stop offset="1" stop-color="#e0c080"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="-318" y1="390.31" x2="-317" y2="390.31" gradientTransform="translate(50900 10435.02) scale(160 -26.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b6e4e"/>
+      <stop offset="1" stop-color="#a07848"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_4" data-name="Sfumatura senza nome 4" x1="-318" y1="389.13" x2="-317" y2="389.13" gradientTransform="translate(50900 9025.5) scale(160 -22.79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#607080"/>
+      <stop offset="1" stop-color="#7a8fa0"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_5" data-name="Sfumatura senza nome 5" x1="-318" y1="387.83" x2="-317" y2="387.83" gradientTransform="translate(50900 7854.86) scale(160 -19.8)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4a5568"/>
+      <stop offset="1" stop-color="#5a6880"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_6" data-name="Sfumatura senza nome 6" x1="-318" y1="386.52" x2="-317" y2="386.52" gradientTransform="translate(50900 6955.32) scale(160 -17.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2d3748"/>
+      <stop offset="1" stop-color="#3a4a60"/>
+    </linearGradient>
+  </defs>
+  <rect class="st24" y="0" width="200" height="200" rx="32" ry="32"/>
+  <g class="st30">
+    <g>
+      <path class="st20" d="M20,105c13.33-11.33,26.67-15.67,40-13,13.33,2.67,26.67.33,40-7s26.67-9,40-5c13.33,4,26.67,3.33,40-2v122H20v-95Z"/>
+      <path class="st29" d="M20,112c20-6,40-7.33,60-4s40,2.67,60-2c16.67-4,30-4.67,40-2v24c-10-2.67-23.33-2-40,2-20,4-40,4.33-60,1-20-3.33-40-3-60,1v-20Z"/>
+      <circle class="st22" cx="45" cy="118" r="1.2"/>
+      <circle class="st23" cx="75" cy="122" r="1"/>
+      <circle class="st22" cx="115" cy="116" r="1.2"/>
+      <circle class="st23" cx="150" cy="120" r="1"/>
+      <path class="st27" d="M20,132c20-4,40-4.33,60-1,20,3.33,40,3,60-1,16.67-4,30-4.67,40-2v22c-10-3.33-23.33-3.33-40,0-20,3.33-40,3.67-60,1s-40-2.67-60,0v-19Z"/>
+      <line class="st12" x1="35" y1="135" x2="42" y2="148"/>
+      <line class="st12" x1="55" y1="133" x2="62" y2="146"/>
+      <line class="st12" x1="95" y1="137" x2="102" y2="150"/>
+      <line class="st12" x1="130" y1="133" x2="137" y2="146"/>
+      <line class="st12" x1="162" y1="131" x2="169" y2="144"/>
+      <path class="st28" d="M20,151c20-2.67,40-2.67,60,0s40,2.33,60-1c16.67-3.33,30-3.33,40,0v18c-10-2.67-23.33-2.67-40,0-20,2.67-40,3-60,1s-40-2.33-60-1v-17Z"/>
+      <line class="st6" x1="20" y1="159" x2="180" y2="159"/>
+      <line class="st6" x1="60" y1="151" x2="60" y2="168"/>
+      <line class="st6" x1="110" y1="151" x2="110" y2="168"/>
+      <line class="st6" x1="155" y1="151" x2="155" y2="168"/>
+      <path class="st26" d="M20,168c20-1.33,40-1,60,1s40,1.67,60-1c16.67-2.67,30-2.67,40,0v16c-10-2-23.33-2-40,0-20,2-40,2.33-60,1s-40-1.67-60-1v-16Z"/>
+      <path class="st25" d="M20,184c20-.67,40-.33,60,1s40,1,60-1c16.67-2,30-2,40,0v16H20v-16Z"/>
+      <path class="st8" d="M20,112c20-6,40-7.33,60-4s40,2.67,60-2c16.67-4,30-4.67,40-2"/>
+      <path class="st8" d="M20,132c20-4,40-4.33,60-1,20,3.33,40,3,60-1,16.67-4,30-4.67,40-2"/>
+      <path class="st8" d="M20,151c20-2.67,40-2.67,60,0s40,2.33,60-1c16.67-3.33,30-3.33,40,0"/>
+      <path class="st8" d="M20,168c20-1.33,40-1,60,1s40,1.67,60-1c16.67-2.67,30-2.67,40,0"/>
+      <ellipse class="st15" cx="100" cy="58" rx="68" ry="42"/>
+      <ellipse class="st11" cx="100" cy="58" rx="52" ry="30"/>
+      <ellipse class="st3" cx="100" cy="57" rx="36" ry="20"/>
+      <ellipse class="st7" cx="100" cy="56" rx="22" ry="12"/>
+      <ellipse class="st19" cx="100" cy="55" rx="10" ry="5"/>
+      <ellipse class="st9" cx="100" cy="55" rx="10" ry="5"/>
+      <circle class="st18" cx="100" cy="55" r="2.5"/>
+      <line class="st16" x1="168" y1="58" x2="172" y2="58"/>
+      <line class="st10" x1="152" y1="58" x2="156" y2="58"/>
+      <line class="st2" x1="136" y1="57" x2="140" y2="57"/>
+      <line class="st14" x1="122" y1="56" x2="126" y2="56"/>
+      <line class="st5" x1="130" y1="105" x2="138" y2="185"/>
+      <line class="st4" x1="126" y1="140" x2="136" y2="140"/>
+      <line class="st13" x1="58" y1="105" x2="58" y2="180"/>
+      <circle class="st17" cx="58" cy="107" r="3"/>
+    </g>
+  </g>
+  <rect class="st1" x="2" y="2" width="196" height="196" rx="30" ry="30"/>
+  <text class="st21" transform="translate(45.39 20)"><tspan x="0" y="0">GEOLOGY TOOLS</tspan></text>
+</svg>
