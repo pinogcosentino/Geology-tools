@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
 [![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
 
-[![logo](https://raw.githubusercontent.com/opengeos/geoai/master/docs/assets/logo_rect.png)](https://github.com/opengeos/geoai/blob/master/docs/assets/logo.png)
+[![logo](https://github.com/opengeos/geoai/blob/master/docs/assets/logo.png)
 
 
 Geology Tools describes a suite of QGIS plugins designed to streamline geological, hydrological, and seismic microzonation analyses.
