@@ -275,7 +275,7 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 - QGIS Plugin Builder: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
 - Wang, L., & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models. *International Journal of         Geographical Information Science*, 20(2), 193-213.
 - Metz, M., Hayakawa, Y. S., & Hofierka, J. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models. *Hydrology and Earth   System Sciences*, 15(2), 667-678. doi.org/10.5194/hess-15-667-2011 [Link](https://doi.org/10.5194/hess-15-667-2011)
-- GRASS Development Team (2023). `r.watershed` module documentation.
+- GRASS Development Team (2023). *GRASS GIS 8.3 Reference Manual: r.watershed*. Open Source Geospatial Foundation.[Link](https://grass.osgeo.org/grass83/manuals/r.watershed.html)
 - Italian Seismic Microzonation Guidelines (ICMS, 2008). [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
 - Regione Emilia-Romagna, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
 - Youd, T. L. (1993). *Liquefaction-induced lateral spread displacement* (Technical Report NCEL-TR-937). Naval Civil Engineering Laboratory, Port Hueneme, CA.
