@@ -4,6 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
 [![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
 [![Guida](https://img.shields.io/badge/Guide_plugin-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/geology_tools_badge.svg)
 
@@ -289,4 +290,4 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 
 This project is distributed for scientific and educational use. Please cite the authors when using this plugin in publications or projects.
 
-![logo](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/icon.png)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
