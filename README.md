@@ -7,14 +7,11 @@
 
 ![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/geology_tools_badge.svg)
 
-
-Geology Tools describes a suite of QGIS plugins designed to streamline geological, hydrological, and seismic microzonation analyses.
-
 # 🪨 Geology Tools — QGIS Plugin
 
-> A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
+A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
 
-**Authors:** Giuseppe Cosentino & Francesco Pennica 
+> **Authors:** Giuseppe Cosentino & Francesco Pennica 
 
 ---
 
@@ -291,4 +288,5 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 ## License
 
 This project is distributed for scientific and educational use. Please cite the authors when using this plugin in publications or projects.
+
 ![logo](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/icon.png)
