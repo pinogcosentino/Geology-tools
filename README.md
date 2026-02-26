@@ -271,18 +271,19 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 
 ## References
 
-- QGIS Development Team. (2026). *QGIS Geographic Information System* (v3.44). QGIS Association. [https://www.qgis.org](https://www.qgis.org)
-- QGIS Plugin Builder: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
-- Wang, L., & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models. *International Journal of         Geographical Information Science*, 20(2), 193-213.
-- Metz, M., Hayakawa, Y. S., & Hofierka, J. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models. *Hydrology and Earth   System Sciences*, 15(2), 667-678. doi.org/10.5194/hess-15-667-2011 [Link](https://doi.org/10.5194/hess-15-667-2011)
-- GRASS Development Team (2023). *GRASS GIS 8.3 Reference Manual: r.watershed*. Open Source Geospatial Foundation.[Link](https://grass.osgeo.org/grass83/manuals/r.watershed.html)
-- SM Working Group, Guidelines for Seismic Microzonation, Conference of Regions and Autonomous Provinces of Italy – Civil Protection Department, Rome, 2015. [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
-- Gruppo di lavoro MS. (2008). *Indirizzi e criteri per la microzonazione sismica*. Conferenza delle Regioni e delle Province autonome - Dipartimento della protezione civile, Roma. [Link](https://www.protezionecivile.gov.it/it/pubblicazione/indirizzi-e-criteri-la-microzonazione-sismica/)
-- Regione Emilia-Romagna, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
-- Youd, T. L. (1993). *Liquefaction-induced lateral spread displacement* (Technical Report NCEL-TR-937). Naval Civil Engineering Laboratory, Port Hueneme, CA.
-- Youd, T. L., Hansen, C. M., & Bartlett, S. F. (2002). Revised multilinear regression equations for prediction of lateral spread displacement. *Journal of      Geotechnical and Geoenvironmental Engineering*, 128(12), 1007-1017.
-- Iwasaki, T., Tatsuoka, F., Tokida, K. I., & Yasuda, S. (1978). *Simplified procedure for assessing soil liquefaction potential*. Proceedings of the 2nd        International Conference on Microzonation, San Francisco, 2, 885-896.
-- Lancellotta, R. (2012). *Geotecnica*. Zanichelli.
+* **CentroMS** - Linee guida per la Microzonazione Sismica. [Link](https://www.centromicrozonazionesismica.it/it/strumenti/linee-guida-ms/)
+* **GRASS Development Team** (2023). *GRASS GIS 8.3 Reference Manual: r.watershed*. Open Source Geospatial Foundation. [Link](https://grass.osgeo.org/grass83/manuals/r.watershed.html)
+* **Gruppo di lavoro MS** (2008). *Indirizzi e criteri per la microzonazione sismica*. Conferenza delle Regioni e delle Province autonome - Dipartimento della protezione civile, Roma. [Link](https://www.protezionecivile.gov.it/it/pubblicazione/indirizzi-e-criteri-la-microzonazione-sismica/)
+* **Iwasaki, T.**, Tatsuoka, F., Tokida, K. I., & Yasuda, S. (1978). *Simplified procedure for assessing soil liquefaction potential*. Proceedings of the 2nd International Conference on Microzonation, San Francisco, 2, 885-896.
+* **Lancellotta, R.** (2012). *Geotecnica*. Zanichelli.
+* **Metz, M.**, Hayakawa, Y. S., & Hofierka, J. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models. *Hydrology and Earth System Sciences*, 15(2), 667-678. [Link](https://doi.org/10.5194/hess-15-667-2011)
+* **QGIS Development Team** (2026). *QGIS Geographic Information System* (v3.44). QGIS Association. [https://www.qgis.org](https://www.qgis.org)
+* **QGIS Plugin Builder**: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
+* **Regione Emilia-Romagna**, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
+* **SM Working Group**, Guidelines for Seismic Microzonation, Conference of Regions and Autonomous Provinces of Italy – Civil Protection Department, Rome, 2015. [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
+* **Wang, L.**, & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models. *International Journal of Geographical Information Science*, 20(2), 193-213.
+* **Youd, T. L.** (1993). *Liquefaction-induced lateral spread displacement* (Technical Report NCEL-TR-937). Naval Civil Engineering Laboratory, Port Hueneme, CA.
+* **Youd, T. L.**, Hansen, C. M., & Bartlett, S. F. (2002). Revised multilinear regression equations for prediction of lateral spread displacement. *Journal of Geotechnical and Geoenvironmental Engineering*, 128(12), 1007-1017.
 
 ---
 
