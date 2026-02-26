@@ -275,7 +275,7 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 * **GRASS Development Team** (2023). *GRASS GIS 8.3 Reference Manual: r.watershed*. Open Source Geospatial Foundation. [Link](https://grass.osgeo.org/grass83/manuals/r.watershed.html)
 * **Gruppo di lavoro MS** (2008). *Indirizzi e criteri per la microzonazione sismica*. Conferenza delle Regioni e delle Province autonome - Dipartimento della protezione civile, Roma. [Link](https://www.protezionecivile.gov.it/it/pubblicazione/indirizzi-e-criteri-la-microzonazione-sismica/)
 * **Iwasaki, T.**, Tatsuoka, F., Tokida, K. I., & Yasuda, S. (1978). *Simplified procedure for assessing soil liquefaction potential*. Proceedings of the 2nd International Conference on Microzonation, San Francisco, 2, 885-896.
-* **Lancellotta, R.** (2012). *Geotecnica*. Zanichelli.
+* **Lancellotta, R.** (2012). *Geotecnica*. Zanichelli.[Link](https://www.zanichelli.it/ricerca/prodotti/geotecnica)
 * **Metz, M.**, Hayakawa, Y. S., & Hofierka, J. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models. *Hydrology and Earth System Sciences*, 15(2), 667-678. [Link](https://doi.org/10.5194/hess-15-667-2011)
 * **QGIS Development Team** (2026). *QGIS Geographic Information System* (v3.44). QGIS Association. [https://www.qgis.org](https://www.qgis.org)
 * **QGIS Plugin Builder**: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
