@@ -276,7 +276,7 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 - Wang, L., & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models.
 - Metz, M., et al. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models.
 - GRASS Development Team (2023). `r.watershed` module documentation.
-- Italian Seismic Microzonation Guidelines (ICMS, 2008).
+- Italian Seismic Microzonation Guidelines (ICMS, 2008). [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
 - Regione Emilia-Romagna, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
 - Youd, T. L. (1993). Liquefaction-induced lateral spread displacement.
 - Youd, T. L., Hansen, C. M., & Bartlett, S. F. (2002). Revised Multilinear Regression Equations for Prediction of Lateral Spread Displacement.
