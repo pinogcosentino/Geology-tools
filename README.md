@@ -279,7 +279,7 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 - Italian Seismic Microzonation Guidelines (ICMS, 2008). [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
 - Regione Emilia-Romagna, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
 - Youd, T. L. (1993). *Liquefaction-induced lateral spread displacement* (Technical Report NCEL-TR-937). Naval Civil Engineering Laboratory, Port Hueneme, CA.
-- Youd, T. L., Hansen, C. M., & Bartlett, S. F. (2002). Revised Multilinear Regression Equations for Prediction of Lateral Spread Displacement.
+- Youd, T. L., Hansen, C. M., & Bartlett, S. F. (2002). Revised multilinear regression equations for prediction of lateral spread displacement. *Journal of      Geotechnical and Geoenvironmental Engineering*, 128(12), 1007-1017.
 - Iwasaki, T., Tatsuoka, F., Tokida, K. I., & Yasuda, S. (1978). *Simplified procedure for assessing soil liquefaction potential*. Proceedings of the 2nd        International Conference on Microzonation, San Francisco, 2, 885-896.
 - Lancellotta, R. (2012). *Geotecnica*. Zanichelli.
 
