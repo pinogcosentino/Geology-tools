@@ -14,10 +14,7 @@ Geology Tools describes a suite of QGIS plugins designed to streamline geologica
 
 > A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
 
-**Authors:** Giuseppe Cosentino¹ & Francesco Pennica²  
-
-> ¹ Consiglio Nazionale delle Ricerche (CNR) — Istituto di Geoscienze e Georisorse (IGG), Pisa, Italy  
-> ² Consiglio Nazionale delle Ricerche (CNR) — Istituto di Geologia Ambientale e Geoingegneria (IGAG), Roma, Italy
+**Authors:** Giuseppe Cosentino & Francesco Pennica 
 
 ---
 
