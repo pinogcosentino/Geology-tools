@@ -288,3 +288,8 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 ## License
 
 This project is distributed for scientific and educational use. Please cite the authors when using this plugin in publications or projects.
+- **Code:** ![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
+- **Documentation:** [![CC BY 4.0][cc-by-shield]][cc-by]
+
+[cc-by]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
