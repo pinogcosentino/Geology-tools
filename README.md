@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
 [![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
 
-![Guida](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
+![Guida](https://img.shields.io/badge/user_manual_like-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
 
 ![logo](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/icon.png)
 
