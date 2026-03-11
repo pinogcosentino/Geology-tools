@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 """
@@ -21,7 +20,7 @@
 __author__ = 'Giuseppe Cosentino'
 __date__ = '2026-02-13'
 __copyright__ = '(C) 2026 by Giuseppe Cosentino'
-__version__ = '1.0'
+__version__ = '2.0'  # Updated for QGIS 4.0
 
 from typing import Dict, Any, List, Optional, Tuple
 from dataclasses import dataclass
@@ -44,6 +43,33 @@ from qgis.core import (
     QgsVectorLayer
 )
 import processing
+
+# ============================================================================
+# QGIS 4.0 / Qt6 compatibility
+# ============================================================================
+if Qgis.QGIS_VERSION_INT >= 40000:
+    # Source types
+    _TYPE_POLYGON = Qgis.ProcessingSourceType.VectorPolygon
+
+    # Field data type
+    _FIELD_NUMERIC = QgsProcessingParameterField.DataType.Numeric
+
+    # Message levels
+    _MSG_CRITICAL = Qgis.MessageLevel.Critical
+    _MSG_WARNING  = Qgis.MessageLevel.Warning
+    _MSG_INFO     = Qgis.MessageLevel.Info
+
+else:
+    # Source types
+    _TYPE_POLYGON = QgsProcessing.TypeVectorPolygon
+
+    # Field data type
+    _FIELD_NUMERIC = QgsProcessingParameterField.Numeric
+
+    # Message levels
+    _MSG_CRITICAL = Qgis.Critical
+    _MSG_WARNING  = Qgis.Warning
+    _MSG_INFO     = Qgis.Info
 
 
 class ZoneType(Enum):
@@ -186,7 +212,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterVectorLayer(
                 self.INPUT_IL_LAYER,
                 self.tr('Layer with Liquefaction Index (IL)'),
-                types=[QgsProcessing.TypeVectorPolygon],
+                types=[_TYPE_POLYGON],         # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorPolygon
                 defaultValue=None
             )
         )
@@ -196,7 +222,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterField(
                 self.INPUT_IL_FIELD,
                 self.tr('Liquefaction Index Field'),
-                type=QgsProcessingParameterField.Numeric,
+                type=_FIELD_NUMERIC,           # ← QGIS 4.0: QgsProcessingParameterField.DataType.Numeric
                 parentLayerParameterName=self.INPUT_IL_LAYER,
                 allowMultiple=False,
                 defaultValue=None
@@ -227,7 +253,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterFeatureSink(
                 self.OUTPUT_ZONES,
                 self.tr('Lateral Spreading Zones (Z0/SZ/RZ)'),
-                type=QgsProcessing.TypeVectorPolygon,
+                type=_TYPE_POLYGON,            # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorPolygon
                 createByDefault=True,
                 supportsAppend=True,
                 defaultValue='TEMPORARY_OUTPUT'
@@ -1009,7 +1035,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Critical
+            _MSG_CRITICAL  # ← QGIS 4.0: Qgis.MessageLevel.Critical
         )
     
     def _log_warning(self, message: str) -> None:
@@ -1022,7 +1048,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Warning
+            _MSG_WARNING   # ← QGIS 4.0: Qgis.MessageLevel.Warning
         )
     
     def _log_info(self, message: str) -> None:
@@ -1035,7 +1061,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Info
+            _MSG_INFO      # ← QGIS 4.0: Qgis.MessageLevel.Info
         )
 
     # ========================================================================

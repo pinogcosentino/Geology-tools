@@ -1,10 +1,9 @@
-
 # -*- coding: utf-8 -*-
 
 """
 ***************************************************************************
 *                                                                         *
-*   Seismic Microzonation MOrpphological Analysis - QGIS Algorithm        *
+*   Seismic Microzonation Morpphological Analysis - QGIS Algorithm        *
 *   -----------------------------------------------------------           *
 *   Date                 : 2026-02-13                                     *
 *   Copyright            : (C) 2025 by Giuseppe Cosentino                 *
@@ -20,7 +19,7 @@
 __author__ = 'Giuseppe Cosentino'
 __date__ = '2026-02-13'
 __copyright__ = '(C) 2026 by Giuseppe Cosentino'
-__version__ = '1.0'
+__version__ = '2.0'  # Updated for QGIS 4.0
 
 from typing import Dict, Any, Optional
 from qgis.core import (
@@ -39,6 +38,33 @@ from qgis.core import (
 )
 from qgis.utils import iface
 import processing
+
+# ============================================================================
+# QGIS 4.0 / Qt6 compatibility
+# ============================================================================
+if Qgis.QGIS_VERSION_INT >= 40000:
+    # Source types
+    _TYPE_POLYGON    = Qgis.ProcessingSourceType.VectorPolygon
+    _TYPE_ANY_GEOM   = Qgis.ProcessingSourceType.VectorAnyGeometry
+
+    # Number type
+    _NUMBER_INTEGER  = QgsProcessingParameterNumber.Type.Integer
+
+    # Message levels
+    _MSG_CRITICAL    = Qgis.MessageLevel.Critical
+    _MSG_WARNING     = Qgis.MessageLevel.Warning
+
+else:
+    # Source types
+    _TYPE_POLYGON    = QgsProcessing.TypeVectorPolygon
+    _TYPE_ANY_GEOM   = QgsProcessing.TypeVectorAnyGeometry
+
+    # Number type
+    _NUMBER_INTEGER  = QgsProcessingParameterNumber.Integer
+
+    # Message levels
+    _MSG_CRITICAL    = Qgis.Critical
+    _MSG_WARNING     = Qgis.Warning
 
 
 class SeismicMicrozonationAlgorithm(QgsProcessingAlgorithm):
@@ -87,7 +113,7 @@ class SeismicMicrozonationAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterVectorLayer(
                 self.INPUT_ZONES,
                 self.tr('Geological Seismic Zones'),
-                types=[QgsProcessing.TypeVectorPolygon],
+                types=[_TYPE_POLYGON],         # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorPolygon
                 defaultValue=None
             )
         )
@@ -97,7 +123,7 @@ class SeismicMicrozonationAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.INPUT_SLOPE_THRESHOLD,
                 self.tr('Slope Threshold (°)'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=self.MIN_SLOPE_THRESHOLD,
                 maxValue=self.MAX_SLOPE_THRESHOLD,
                 defaultValue=self.DEFAULT_SLOPE_THRESHOLD
@@ -120,7 +146,7 @@ class SeismicMicrozonationAlgorithm(QgsProcessingAlgorithm):
                 self.OUTPUT_ZONES,
                 self.tr('High Slope Zones'),
                 optional=True,
-                type=QgsProcessing.TypeVectorAnyGeometry,
+                type=_TYPE_ANY_GEOM,           # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorAnyGeometry
                 createByDefault=True,
                 defaultValue='TEMPORARY_OUTPUT'
             )
@@ -415,11 +441,11 @@ class SeismicMicrozonationAlgorithm(QgsProcessingAlgorithm):
 
     def _log_error(self, message: str) -> None:
         """Log error message."""
-        QgsMessageLog.logMessage(message, self.displayName(), Qgis.Critical)
+        QgsMessageLog.logMessage(message, self.displayName(), _MSG_CRITICAL)  # ← QGIS 4.0: Qgis.MessageLevel.Critical
 
     def _log_warning(self, message: str) -> None:
         """Log warning message."""
-        QgsMessageLog.logMessage(message, self.displayName(), Qgis.Warning)
+        QgsMessageLog.logMessage(message, self.displayName(), _MSG_WARNING)   # ← QGIS 4.0: Qgis.MessageLevel.Warning
 
     def name(self) -> str:
         """Return the algorithm name."""

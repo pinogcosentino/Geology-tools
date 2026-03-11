@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 """
@@ -21,7 +20,7 @@
 __author__ = 'Giuseppe Cosentino'
 __date__ = '2026-02-13'
 __copyright__ = '(C) 2026 by Giuseppe Cosentino'
-__version__ = '1.0'
+__version__ = '2.0'  # Updated for QGIS 4.0
 
 from typing import Dict, Any, Optional
 from dataclasses import dataclass
@@ -42,6 +41,35 @@ from qgis.core import (
     Qgis
 )
 import processing
+
+# ============================================================================
+# QGIS 4.0 / Qt6 compatibility
+# ============================================================================
+if Qgis.QGIS_VERSION_INT >= 40000:
+    # Source types
+    _TYPE_LINE = Qgis.ProcessingSourceType.VectorLine
+
+    # Number types
+    _NUMBER_DOUBLE  = QgsProcessingParameterNumber.Type.Double
+    _NUMBER_INTEGER = QgsProcessingParameterNumber.Type.Integer
+
+    # Message levels
+    _MSG_CRITICAL = Qgis.MessageLevel.Critical
+    _MSG_WARNING  = Qgis.MessageLevel.Warning
+    _MSG_INFO     = Qgis.MessageLevel.Info
+
+else:
+    # Source types
+    _TYPE_LINE = QgsProcessing.TypeVectorLine
+
+    # Number types
+    _NUMBER_DOUBLE  = QgsProcessingParameterNumber.Double
+    _NUMBER_INTEGER = QgsProcessingParameterNumber.Integer
+
+    # Message levels
+    _MSG_CRITICAL = Qgis.Critical
+    _MSG_WARNING  = Qgis.Warning
+    _MSG_INFO     = Qgis.Info
 
 
 @dataclass
@@ -394,7 +422,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterNumber(
                 self.MIN_SLOPE,
                 self.tr('Minimum Slope (degrees)'),
-                type=QgsProcessingParameterNumber.Double,
+                type=_NUMBER_DOUBLE,           # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Double
                 minValue=0.01,
                 maxValue=90,
                 defaultValue=self.DEFAULT_MIN_SLOPE
@@ -405,7 +433,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterNumber(
                 self.MIN_BASIN_SIZE,
                 self.tr('Minimum Basin Size (cells)'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=1,
                 defaultValue=self.DEFAULT_MIN_BASIN_SIZE
             )
@@ -416,7 +444,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterNumber(
                 self.ITERATIONS,
                 self.tr('Smoothing Iterations'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=1,
                 maxValue=10,
                 defaultValue=self.DEFAULT_ITERATIONS
@@ -427,7 +455,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterNumber(
                 self.MAX_ANGLE,
                 self.tr('Maximum Vertex Angle (degrees)'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=0,
                 maxValue=360,
                 defaultValue=self.DEFAULT_MAX_ANGLE
@@ -438,7 +466,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterNumber(
                 self.OFFSET,
                 self.tr('Smoothing Offset'),
-                type=QgsProcessingParameterNumber.Double,
+                type=_NUMBER_DOUBLE,           # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Double
                 minValue=0.01,
                 maxValue=1.0,
                 defaultValue=self.DEFAULT_OFFSET
@@ -459,7 +487,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterVectorDestination(
                 self.OUTPUT_VECTOR_RAW,
                 self.tr('Raw Stream Network (Vector)'),
-                type=QgsProcessing.TypeVectorLine,
+                type=_TYPE_LINE,               # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorLine
                 createByDefault=True,
                 defaultValue=None
             )
@@ -469,7 +497,7 @@ to extract drainage networks and compute hydrological indices.</p>
             QgsProcessingParameterFeatureSink(
                 self.OUTPUT_SMOOTH,
                 self.tr('Smoothed Stream Network'),
-                type=QgsProcessing.TypeVectorLine,
+                type=_TYPE_LINE,               # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorLine
                 createByDefault=True,
                 defaultValue=None
             )
@@ -978,7 +1006,7 @@ to extract drainage networks and compute hydrological indices.</p>
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Critical
+            _MSG_CRITICAL  # ← QGIS 4.0: Qgis.MessageLevel.Critical
         )
     
     def _log_warning(self, message: str) -> None:
@@ -991,7 +1019,7 @@ to extract drainage networks and compute hydrological indices.</p>
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Warning
+            _MSG_WARNING   # ← QGIS 4.0: Qgis.MessageLevel.Warning
         )
     
     def _log_info(self, message: str) -> None:
@@ -1004,5 +1032,5 @@ to extract drainage networks and compute hydrological indices.</p>
         QgsMessageLog.logMessage(
             message, 
             self.displayName(), 
-            Qgis.Info
+            _MSG_INFO      # ← QGIS 4.0: Qgis.MessageLevel.Info
         )
