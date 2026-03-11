@@ -5,7 +5,7 @@
 [![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
 [![Guida](https://img.shields.io/badge/Guide_plugin-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
 
-![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/geology_tools_badge.svg)
+![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/2.0/help/source/img/geology_tools_badge.svg)
 
 # 🪨 Geology Tools — QGIS Plugin
 
