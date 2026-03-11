@@ -1,9 +1,9 @@
-
 [general]
 name=Geology tools
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.16
+qgisMaximumVersion=4.99
 description=Geology Tools offers a collection of plugins that simplify workflows in geology, hydrogeology, and seismic microzonation
-version=1.0
+version=2.0.0
 author=Giuseppe Cosentino (Pino), Francesco Pennica
 email=giuseppe.cosentino@cnr.it
 
@@ -41,15 +41,21 @@ repository=https://github.com/pinogcosentino/Geology-tools
 hasProcessingProvider=yes
 
 changelog=
-Version 1.0.1
-		-  Seismic microzonation/Lateral spreading analysis (LSA) with color-coded categories and labels
+
+	Version 2.0.0
+		- Full compatibility with QGIS 4.x (PyQt6, Qt6 enums)
+		- Backward compatible with QGIS 3.16+ (PyQt5)
+		- Updated enum references: Qgis.MessageLevel, Qgis.GeometryType, Qgis.ProcessingSourceType
+		- Updated QgsProcessingParameterField.DataType and QgsProcessingParameterNumber.Type
+	Version 1.0.1 
+		- Seismic microzonation/Lateral spreading analysis (LSA) with color-coded categories and labels
 	Version 1.0 
-		-  resolved bugs
-        -  the shortHelpString panels have been improved
+		- resolved bugs
+		- the shortHelpString panels have been improved
 	Version 0.2 
-		-  resolved bugs experimental version 
+		- resolved bugs experimental version 
 	Version 0.1 
-		-  inizial experimental version 
+		- initial experimental version 
 
 # Tags are comma separated with spaces allowed
 tags=geology, python, seismic microzonation, hydrology, geoprocessing
@@ -73,4 +79,3 @@ Category of the plugin: Raster, Vector, Database or Web
 
 # If the plugin can run on QGIS Server.
 server=False
-
