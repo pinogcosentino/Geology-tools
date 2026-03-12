@@ -1,3 +1,12 @@
+# Geology-tools
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669743.svg)](https://doi.org/10.5281/zenodo.18669743)
+![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
+![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
+[![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
+[![Guida](https://img.shields.io/badge/Guide_plugin-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
+
+![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/geology_tools_badge.svg)
+
 # 🪨 Geology Tools — QGIS Plugin
 
 > A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
