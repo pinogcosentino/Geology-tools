@@ -1,17 +1,12 @@
-# Geology-tools
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18669743.svg)](https://doi.org/10.5281/zenodo.18669743)
-![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
-![GitHub Release](https://img.shields.io/github/release/pinogcosentino/Geology-tools)
-[![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://plugins.qgis.org/plugins/Geology_tools/)
-[![Guida](https://img.shields.io/badge/Guide_plugin-blue)](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/Geology%20Tools.pdf)
-
-![badge plugin](https://github.com/pinogcosentino/Geology-tools/blob/2.0/help/source/img/geology_tools_badge.svg)
-
 # 🪨 Geology Tools — QGIS Plugin
 
-A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
+> A suite of QGIS plugins for geological mapping, hydrological analysis, and seismic microzonation.
 
-> **Authors:** Giuseppe Cosentino & Francesco Pennica 
+**Authors:** Giuseppe Cosentino¹ & Francesco Pennica²  
+
+
+> ¹ Consiglio Nazionale delle Ricerche (CNR) — Istituto di Geoscienze e Georisorse (IGG), Pisa, Italy  
+> ² Consiglio Nazionale delle Ricerche (CNR) — Istituto di Geologia Ambientale e Geoingegneria (IGAG), Roma, Italy
 
 ---
 
@@ -132,9 +127,13 @@ The HASN module performs comprehensive watershed analysis using an **integrated 
 
 #### Processing Workflow
 
-
-![figura](https://github.com/pinogcosentino/Geology-tools/blob/1.0.1/help/source/img/Hydrological%20Analysis%20Stream%20Network%20-%20QGIS%20Plugin%20%20.png)
-
+```
+DTM → Fill Sinks → Flow Direction → Flow Accumulation → TWI
+                                                      ↓
+                                              Stream Delineation
+                                                      ↓
+                                           Raster → Vector → Smooth
+```
 
 **Step 1: Fill Sinks (Wang & Liu Algorithm)**  
 Creates a hydrologically correct DTM by filling artificial depressions. The algorithm identifies all sinks, finds the lowest outlet (spill point) on each depression's boundary, and fills it to that elevation.
@@ -271,27 +270,20 @@ This algorithm identifies areas with slopes **≥ 15°** within seismic or geolo
 
 ## References
 
-* **CentroMS** - Linee guida per la Microzonazione Sismica. [Link](https://www.centromicrozonazionesismica.it/it/strumenti/linee-guida-ms/)
-* **GRASS Development Team** (2023). *GRASS GIS 8.3 Reference Manual: r.watershed*. Open Source Geospatial Foundation. [Link](https://grass.osgeo.org/grass83/manuals/r.watershed.html)
-* **Gruppo di lavoro MS** (2008). *Indirizzi e criteri per la microzonazione sismica*. Conferenza delle Regioni e delle Province autonome - Dipartimento della protezione civile, Roma. [Link](https://www.protezionecivile.gov.it/it/pubblicazione/indirizzi-e-criteri-la-microzonazione-sismica/)
-* **Iwasaki, T.**, Tatsuoka, F., Tokida, K. I., & Yasuda, S. (1978). *Simplified procedure for assessing soil liquefaction potential*. Proceedings of the 2nd International Conference on Microzonation, San Francisco, 2, 885-896.
-* **Lancellotta, R.** (2012). *Geotecnica*. Zanichelli.[Link](https://www.zanichelli.it/ricerca/prodotti/geotecnica)
-* **Metz, M.**, Hayakawa, Y. S., & Hofierka, J. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models. *Hydrology and Earth System Sciences*, 15(2), 667-678. [Link](https://doi.org/10.5194/hess-15-667-2011)
-* **QGIS Development Team** (2026). *QGIS Geographic Information System* (v3.44). QGIS Association. [https://www.qgis.org](https://www.qgis.org)
-* **QGIS Plugin Builder**: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
-* **Regione Emilia-Romagna**, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
-* **SM Working Group**, Guidelines for Seismic Microzonation, Conference of Regions and Autonomous Provinces of Italy – Civil Protection Department, Rome, 2015. [Link](https://www.centromicrozonazionesismica.it/documents/18/GuidelinesForSeismicMicrozonation.pdf)
-* **Wang, L.**, & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models. *International Journal of Geographical Information Science*, 20(2), 193-213.
-* **Youd, T. L.** (1993). *Liquefaction-induced lateral spread displacement* (Technical Report NCEL-TR-937). Naval Civil Engineering Laboratory, Port Hueneme, CA.
-* **Youd, T. L.**, Hansen, C. M., & Bartlett, S. F. (2002). Revised multilinear regression equations for prediction of lateral spread displacement. *Journal of Geotechnical and Geoenvironmental Engineering*, 128(12), 1007-1017.
+- QGIS Development Team. (2026). *QGIS Geographic Information System* (v3.44). QGIS Association. [https://www.qgis.org](https://www.qgis.org)
+- QGIS Plugin Builder: [http://g-sherman.github.io/Qgis-Plugin-Builder/](http://g-sherman.github.io/Qgis-Plugin-Builder/)
+- Wang, L., & Liu, H. (2006). An efficient method for identifying and filling surface depressions in digital elevation models.
+- Metz, M., et al. (2011). Efficient extraction of drainage networks from massive, radar-based elevation models.
+- GRASS Development Team (2023). `r.watershed` module documentation.
+- Italian Seismic Microzonation Guidelines (ICMS, 2008).
+- Regione Emilia-Romagna, DGR 476/2021 — Indirizzi per gli studi di microzonazione sismica. [Link](https://ambiente.regione.emilia-romagna.it/it/geologia/sismica/indirizzi-per-studi-microzonazione-sismica)
+- Youd, T. L. (1993). Liquefaction-induced lateral spread displacement.
+- Youd, T. L., Hansen, C. M., & Bartlett, S. F. (2002). Revised Multilinear Regression Equations for Prediction of Lateral Spread Displacement.
+- Iwasaki, T., et al. (1978). Simplified procedure for assessing soil liquefaction.
+- Lancellotta, R. (2012). *Geotecnica*. Zanichelli.
 
 ---
 
 ## License
 
 This project is distributed for scientific and educational use. Please cite the authors when using this plugin in publications or projects.
-- **Code:** ![GitHub License](https://img.shields.io/github/license/pinogcosentino/Geology-tools)
-- **Documentation:** [![CC BY 4.0][cc-by-shield]][cc-by]
-
-[cc-by]: https://creativecommons.org/licenses/by/4.0/
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
