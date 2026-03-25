@@ -984,23 +984,22 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
         feedback: Any
     ) -> None:
         """
-        Apply a QML style file to a layer.
-        
-        Args:
-            layer_output: Output layer path
-            style_filename: Style filename (e.g., 'slope.qml')
-            context: Processing context
-            feedback: Feedback object
+        Applica uno stile QML cercandolo nella cartella 'styles' 
+        al livello superiore rispetto a questo script.
         """
+        # Risaliamo di un livello: da .../processing/ a .../
+        plugin_root = os.path.dirname(os.path.dirname(__file__))
+        
+        # Costruiamo il percorso verso la cartella styles esterna
         style_path = os.path.join(
-            os.path.dirname(__file__), 
+            plugin_root, 
             "styles", 
             style_filename
         )
         
         if not os.path.exists(style_path):
             feedback.pushWarning(
-                self.tr('Style file not found: {}').format(style_path)
+                self.tr('File di stile non trovato: {}').format(style_path)
             )
             return
         
@@ -1018,7 +1017,7 @@ class LateralSpreadingAlgorithm(QgsProcessingAlgorithm):
             )
         except Exception as e:
             feedback.pushWarning(
-                self.tr('Could not apply style {}: {}').format(style_filename, str(e))
+                self.tr('Impossibile applicare lo stile {}: {}').format(style_filename, str(e))
             )
 
     # ========================================================================
